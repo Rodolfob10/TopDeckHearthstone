@@ -46,15 +46,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent it = new Intent(MainActivity.this, actTier2.class);
                 startActivity(it);
             }
-            /*else{
+            else{
                 Intent it = new Intent(MainActivity.this,actTier3.class);
                 startActivity(it);
             }
-        }*/
+        }
 
 
         }
 
 
     }
-}

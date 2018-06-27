@@ -30,7 +30,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -42,7 +43,9 @@
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:srcCompat="@drawable/Priest" />
+        app:srcCompat="@drawable/priest"
+        android:onClick="deckPriest"
+        />
 
     <TextView
         android:id="@+id/textView10"
@@ -67,5 +70,5 @@
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:srcCompat="@drawable/Mage" />
+        app:srcCompat="@drawable/mage" />
 </android.support.constraint.ConstraintLayout>
