@@ -23,6 +23,10 @@
         <activity
             android:name=".actTier2"
             android:label="@string/title_activity_act_tier2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actTier3"
+            android:label="@string/title_activity_act_tier3"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
