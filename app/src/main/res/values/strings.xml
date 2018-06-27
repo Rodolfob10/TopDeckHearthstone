@@ -6,5 +6,6 @@
         <item>Tier 3</item>
     </string-array>
     <string name="title_activity_act_tier1">Tier1</string>
+    <string name="title_activity_act_tier2">Tier2</string>
 
 </resources>

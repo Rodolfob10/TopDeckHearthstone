@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         deck = (Spinner) findViewById(R.id.spnDecks);
         btnok = (Button) findViewById(R.id.btnOk);
 
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this,R.array.tipos_deck, R.layout.support_simple_spinner_dropdown_item);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.tipos_deck, R.layout.support_simple_spinner_dropdown_item);
         deck.setAdapter(adapter);
 
         btnok.setOnClickListener(new View.OnClickListener() {
@@ -34,27 +34,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void deck(){
+
+    public void deck() {
         item = deck.getSelectedItem().toString();
 
-        if(item.equals("Tier 1")){
-            Intent it = new Intent(MainActivity.this,actTier1.class);
+        if (item.equals("Tier 1")) {
+            Intent it = new Intent(MainActivity.this, actTier1.class);
             startActivity(it);
-        }
-        /*else {
-            if(item.equals("Tier 2")){
-                Intent it = new Intent(MainActivity.this,actTier2.class);
+        } else {
+            if (item.equals("Tier 2")) {
+                Intent it = new Intent(MainActivity.this, actTier2.class);
                 startActivity(it);
             }
-            else{
+            /*else{
                 Intent it = new Intent(MainActivity.this,actTier3.class);
                 startActivity(it);
             }
         }*/
 
 
+        }
+
+
     }
-
-
-
 }
