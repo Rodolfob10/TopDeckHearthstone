@@ -1,5 +1,6 @@
 package pooa20181.iff.edu.br.hearthstonetopdeck;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,4 +27,14 @@ public class actTier2 extends AppCompatActivity {
         });
     }
 
+    public void deckWarlock(View view) {
+        Intent it = new Intent(actTier2.this, DeckWarlock.class);
+        startActivity(it);
+    }
+
+
+    public void deckDruid(View view) {
+        Intent it = new Intent(actTier2.this, DeckDruid.class);
+        startActivity(it);
+    }
 }

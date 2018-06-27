@@ -5,55 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".DeckPriest"
-    tools:showIn="@layout/activity_deck_priest">
+    tools:context=".DeckDruid"
+    tools:showIn="@layout/activity_deck_druid">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="Deck Combo Priest"
+        android:text="Deck Taunt Druid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView18"
         android:layout_width="201dp"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="Bom Contra: Spell Hunter,Cube Warlock  e Control Warrior"
+        android:text="Bom Contra: Even Warlock, Control Mage "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <ScrollView
         android:layout_width="368dp"
         android:layout_height="388dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14">
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/deckpriest"
-                tools:layout_editor_absoluteX="65dp"
-                tools:layout_editor_absoluteY="147dp" />
+                app:srcCompat="@drawable/deckdruid"
+                tools:layout_editor_absoluteX="217dp"
+                tools:layout_editor_absoluteY="386dp" />
         </LinearLayout>
     </ScrollView>
 

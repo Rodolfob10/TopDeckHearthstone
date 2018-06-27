@@ -70,5 +70,6 @@
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:srcCompat="@drawable/mage" />
+        app:srcCompat="@drawable/mage"
+        android:onClick="deckMage"/>
 </android.support.constraint.ConstraintLayout>

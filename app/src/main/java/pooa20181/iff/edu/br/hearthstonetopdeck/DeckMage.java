@@ -1,6 +1,5 @@
 package pooa20181.iff.edu.br.hearthstonetopdeck;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,12 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class actTier3 extends AppCompatActivity {
+public class DeckMage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_act_tier3);
+        setContentView(R.layout.activity_deck_mage);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,16 +26,4 @@ public class actTier3 extends AppCompatActivity {
         });
     }
 
-    public void deckPriest(View view) {
-
-        Intent it = new Intent(actTier3.this, DeckPriest.class);
-        startActivity(it);
-    }
-
-    public void deckMage(View view) {
-        Intent it = new Intent(actTier3.this, DeckMage.class);
-        startActivity(it);
-
-
-    }
 }

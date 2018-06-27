@@ -31,6 +31,18 @@
         <activity
             android:name=".DeckPriest"
             android:label="@string/title_activity_deck_priest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeckMage"
+            android:label="@string/title_activity_deck_mage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeckWarlock"
+            android:label="@string/title_activity_deck_warlock"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeckDruid"
+            android:label="@string/title_activity_deck_druid"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -9,5 +9,8 @@
     <string name="title_activity_act_tier2">Tier2</string>
     <string name="title_activity_act_tier3">Tier3</string>
     <string name="title_activity_deck_priest">Deck Combo Priest</string>
+    <string name="title_activity_deck_mage">Deck Control Mage</string>
+    <string name="title_activity_deck_warlock">Deck Even Warlock</string>
+    <string name="title_activity_deck_druid">Deck Taunt Druid</string>
 
 </resources>
