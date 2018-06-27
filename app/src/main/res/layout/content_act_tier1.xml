@@ -42,7 +42,8 @@
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/paladin" />
+        app:srcCompat="@drawable/paladin"
+        android:onClick="deckPaladin"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -66,5 +67,6 @@
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/shaman" />
+        app:srcCompat="@drawable/shaman"
+        android:onClick="deckShaman"/>
 </android.support.constraint.ConstraintLayout>

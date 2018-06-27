@@ -43,6 +43,14 @@
         <activity
             android:name=".DeckDruid"
             android:label="@string/title_activity_deck_druid"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeckPaladin"
+            android:label="@string/title_activity_deck_paladin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeckShaman"
+            android:label="@string/title_activity_deck_shaman"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

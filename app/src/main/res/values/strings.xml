@@ -12,5 +12,7 @@
     <string name="title_activity_deck_mage">Deck Control Mage</string>
     <string name="title_activity_deck_warlock">Deck Even Warlock</string>
     <string name="title_activity_deck_druid">Deck Taunt Druid</string>
+    <string name="title_activity_deck_paladin">Deck ODD Paladin</string>
+    <string name="title_activity_deck_shaman">Deck Even Shaman</string>
 
 </resources>
