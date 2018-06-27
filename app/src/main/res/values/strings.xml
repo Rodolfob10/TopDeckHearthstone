@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Hearthstone Top Deck</string>
+    <string-array name="tipos_deck">
+        <item>Tier 1</item>
+        <item>Tier 2</item>
+        <item>Tier 3</item>
+    </string-array>
+    <string name="title_activity_act_tier1">Tier1</string>
+
 </resources>
