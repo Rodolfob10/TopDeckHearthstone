@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.DeckTier1DetailActivity"
-    tools:showIn="@layout/activity_deck_tier1_detail">
+    tools:context=".activity.DeckDetailActivity"
+    tools:showIn="@layout/activity_deck_detail">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome" />
+        android:text="Nome"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewnome"
@@ -24,7 +25,8 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descrição" />
+        android:text="Descrição"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewdescricao"
@@ -35,7 +37,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dust" />
+        android:text="Dust"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewdust"
@@ -46,17 +49,24 @@
         android:id="@+id/textView25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Deck" />
+        android:text="Deck"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageViewPhoto"
-        android:layout_width="251dp"
-        android:layout_height="102dp"
-        app:srcCompat="@drawable/paladin" />
-
-    <Button
-        android:id="@+id/buttonVoltar"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Voltar" />
+        android:layout_height="380dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/deckpaladin" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

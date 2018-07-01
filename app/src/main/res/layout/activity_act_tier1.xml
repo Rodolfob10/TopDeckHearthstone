@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".model.actTier1">
+    tools:context=".activity.actTier1">
 
     <ListView
-        android:id="@+id/listViewDecksTier1"
+        android:id="@+id/listViewDecks"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

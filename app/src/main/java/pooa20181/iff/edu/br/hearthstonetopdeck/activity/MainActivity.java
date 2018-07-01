@@ -9,9 +9,6 @@ import android.widget.Spinner;
 import android.widget.ArrayAdapter;
 
 import pooa20181.iff.edu.br.hearthstonetopdeck.R;
-import pooa20181.iff.edu.br.hearthstonetopdeck.actTier2;
-import pooa20181.iff.edu.br.hearthstonetopdeck.actTier3;
-import pooa20181.iff.edu.br.hearthstonetopdeck.model.actTier1;
 
 public class MainActivity extends AppCompatActivity {
 

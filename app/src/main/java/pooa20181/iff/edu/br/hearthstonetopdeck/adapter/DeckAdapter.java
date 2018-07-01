@@ -1,22 +1,21 @@
 package pooa20181.iff.edu.br.hearthstonetopdeck.adapter;
 
 import pooa20181.iff.edu.br.hearthstonetopdeck.R;
-import pooa20181.iff.edu.br.hearthstonetopdeck.model.DeckTier1;
+import pooa20181.iff.edu.br.hearthstonetopdeck.model.Deck;
 
 import java.util.List;
 
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.*;
 import android.content.*;
 import android.widget.*;
 
-public class DeckTier1Adapter extends ArrayAdapter <DeckTier1> {
+public class DeckAdapter extends ArrayAdapter <Deck> {
 
     private Context context;
-    private List<DeckTier1> decks1;
+    private List<Deck> decks1;
 
-    public DeckTier1Adapter(Context context,List<DeckTier1>  decks1){
+    public DeckAdapter(Context context, List<Deck>  decks1){
         super(context, R.layout.tier1_list_layout,decks1);
         this.context = context;
         this.decks1 = decks1;
