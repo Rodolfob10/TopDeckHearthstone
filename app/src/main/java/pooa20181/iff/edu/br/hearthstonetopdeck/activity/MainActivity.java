@@ -1,4 +1,4 @@
-package pooa20181.iff.edu.br.hearthstonetopdeck;
+package pooa20181.iff.edu.br.hearthstonetopdeck.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
+
+import pooa20181.iff.edu.br.hearthstonetopdeck.R;
+import pooa20181.iff.edu.br.hearthstonetopdeck.actTier2;
+import pooa20181.iff.edu.br.hearthstonetopdeck.actTier3;
+import pooa20181.iff.edu.br.hearthstonetopdeck.model.actTier1;
 
 public class MainActivity extends AppCompatActivity {
 

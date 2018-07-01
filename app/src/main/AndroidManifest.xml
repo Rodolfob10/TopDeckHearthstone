@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".actTier1"
+            android:name=".model.actTier1"
             android:label="@string/title_activity_act_tier1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -51,6 +51,10 @@
         <activity
             android:name=".DeckShaman"
             android:label="@string/title_activity_deck_shaman"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DeckTier1DetailActivity"
+            android:label="@string/title_activity_deck_tier1_detail"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
