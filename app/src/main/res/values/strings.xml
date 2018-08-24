@@ -4,7 +4,6 @@
         <item>Tier 1</item>
         <item>Tier 2</item>
         <item>Tier 3</item>
-
     </string-array>
     <string name="title_activity_act_tier1">Tier1</string>
     <string name="title_activity_act_tier2">Tier2</string>
@@ -16,5 +15,8 @@
     <string name="title_activity_deck_paladin">Deck ODD Paladin</string>
     <string name="title_activity_deck_shaman">Deck Even Shaman</string>
     <string name="title_activity_deck_tier1_detail">DeckTier1DetailActivity</string>
+
+    <string name="facebook_app_id">254115271906867</string>
+
 
 </resources>
