@@ -17,6 +17,9 @@
     <string name="title_activity_deck_tier1_detail">DeckTier1DetailActivity</string>
 
     <string name="facebook_app_id">254115271906867</string>
+    <string name="fb_login_protocol_scheme">fb254115271906867</string>
+    <string name="cancel_login">Login Cancelado</string>
+    <string name="erro_login">Erro no Login</string>
 
 
 </resources>

@@ -1,31 +1,24 @@
 package pooa20181.iff.edu.br.hearthstonetopdeck.activity;
 
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
+
+import com.facebook.AccessToken;
+
+
 import com.facebook.FacebookSdk;
-import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
+import com.facebook.appevents.AppEventsLogger;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import com.facebook.login.LoginManager;
+
+
 
 import pooa20181.iff.edu.br.hearthstonetopdeck.R;
 
@@ -34,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner deck;
     private Button btnok;
     private String item;
-    TextView txtStatus;
-    LoginButton login_button;
-    CallbackManager callbackManager;
+
 
 
 
@@ -44,10 +35,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         FacebookSdk.sdkInitialize(getApplicationContext());
-        initializeControls();
-        loginFB();
+        AppEventsLogger.activateApp(this);
+
+        if(AccessToken.getCurrentAccessToken() == null){
+            goLoginScrean();
+        }
+
+        setContentView(R.layout.activity_main);
+
+
 
         deck = (Spinner) findViewById(R.id.spnDecks);
         btnok = (Button) findViewById(R.id.btnOk);
@@ -64,40 +61,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void initializeControls(){
-        callbackManager = CallbackManager.Factory.create();
-        txtStatus = (TextView)findViewById(R.id.txtStatus);
-        login_button = (LoginButton)findViewById(R.id.login_button);
+    private void goLoginScrean() {
+        Intent intent = new Intent(this,LoginActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
+        startActivity(intent);
+
     }
 
-    private void loginFB(){
-        LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                txtStatus.setText("Login Sucess\n" + loginResult.getAccessToken());
-            }
-
-            @Override
-            public void onCancel() {
-                txtStatus.setText("Login Cancelled");
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                txtStatus.setText("Login Erro:" + error.getMessage());
-            }
-        });
+    public void logout(View view){
+        LoginManager.getInstance().logOut();
+        goLoginScrean();
     }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        callbackManager.onActivityResult(requestCode, resultCode, data);
-        super.onActivityResult(requestCode, resultCode, data);
-    }
-
-
-
 
 
     public void deck() {
